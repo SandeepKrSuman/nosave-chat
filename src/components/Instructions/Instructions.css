@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.instructions-container {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;
+    padding-top: 12%;
+    text-align: left;
+  }
+  
+  .instructions-container h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .instructions-container ol {
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+  
+  .instructions-container li {
+    margin-bottom: 10px;
+  }
+  

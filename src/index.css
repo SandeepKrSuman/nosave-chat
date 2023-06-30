@@ -1,0 +1,35 @@
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  cursor: default;
+}
+
+
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #B7B7B7;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+
+  /* custom selection color */
+
+  ::selection {
+    background-color: #25d366;
+    color: #ffffff;
+  }
+  

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap');
+
+.navbrand {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 18%;
+    cursor:default;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  
+  .text {
+    font-size: 1.3rem;
+    color: #ffffff;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .navbrand {
+        margin-left: 5px;
+        margin-top: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .navbrand {
+        margin-top: 0;
+    }
+  }

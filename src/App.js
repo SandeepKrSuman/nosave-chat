@@ -1,10 +1,6 @@
 import React from "react";
+import Home from "./components/Home/Home";
 
 export default function App() {
-  return (
-    <div>
-      <h1>Hello</h1>
-      <p>hey, there</p>
-    </div>
-  );
+  return <Home />;
 }
