@@ -11,7 +11,7 @@ const Card = () => {
       <p className="device">Mobile and Tablet</p>
       <h2 className="device-title">Android</h2>
       <a href={appurl}>
-        <img alt="Get it on Google Play" src="playbadge.png" />
+        <img alt="Get it on Google Play" src="/playbadge.png" />
       </a>
     </div>
   );
