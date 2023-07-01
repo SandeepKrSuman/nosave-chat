@@ -5,8 +5,8 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.join(__dirname, "build"),
-    publicPath: "/",
     filename: "bundle.js",
+    clean: true,
   },
   module: {
     rules: [
@@ -21,13 +21,29 @@ module.exports = {
         },
       },
       {
+        test: /\.html$/i,
+        use: "html-loader",
+      },
+      {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpg|jpe?g|gif|ico)$/i,
+        type: "asset/resource",
+        parser: {
+          dataUrlCondition: {
+            maxSize: 10 * 1024,
+          },
+        },
+        generator: {
+          filename: "images/[name]-[hash][ext]",
+        },
       },
     ],
   },
   resolve: {
-    extensions: ["*", ".js", ".jsx"],
+    extensions: [".*", ".js", ".jsx"],
   },
   devServer: {
     static: path.join(__dirname, "public"),
