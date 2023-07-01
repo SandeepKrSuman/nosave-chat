@@ -1,4 +1,4 @@
-![NoSave Chat](./public/homepage.png)
+![NoSave Chat](./public/homepage.jpg)
 
 ### How to Use?
 
