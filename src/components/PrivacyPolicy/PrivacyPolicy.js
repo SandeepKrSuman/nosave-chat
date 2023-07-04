@@ -86,7 +86,7 @@ const PrivacyPolicy = () => {
           informed about how we are protecting your information.
         </p>
 
-        <div className="psection-title">8. Contact Us</div>
+        <div className="psection-title">7. Contact Us</div>
         <p>
           If you have any questions or concerns about this Cookie Policy &
           Privacy Statement, please raise an issue{" "}
