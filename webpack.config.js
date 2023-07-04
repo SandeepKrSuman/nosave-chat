@@ -40,6 +40,11 @@ module.exports = {
           filename: "images/[name]-[hash][ext]",
         },
       },
+      {
+        test: /\.js$/,
+        enforce: "pre",
+        use: ["source-map-loader"],
+      },
     ],
   },
   resolve: {
@@ -48,6 +53,7 @@ module.exports = {
   devServer: {
     static: path.join(__dirname, "public"),
     port: 3000,
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
