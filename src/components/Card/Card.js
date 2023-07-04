@@ -3,7 +3,7 @@ import React from "react";
 import "./Card.css";
 
 const appurl =
-  "https://play.google.com/store/apps/details?id=com.famapp&utm_source=website&utm_campaign=download";
+  "https://play.google.com/store/apps/details?id=com.nosavechat&utm_source=website&utm_campaign=download";
 
 const Card = () => {
   return (
