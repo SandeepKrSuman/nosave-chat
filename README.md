@@ -1,4 +1,4 @@
-![NoSave Chat](./public/homepage.jpg)
+![NoSave Chat](./public/homepage.png)
 
 ### How to Use?
 
@@ -6,6 +6,6 @@
 2. Type your message in the text box at the bottom.
 3. Click the "Chat on WhatsApp" button to redirect to WhatsApp and start the chat.
 
-### Install the App
+### Available for Android
 
-<a href="https://play.google.com/" align="center"><img src="./public/getonplay.png" alt="get it on google play" /></a>
+<a href="https://play.google.com/store/apps/details?id=com.nosavechat&utm_source=github&utm_campaign=readme"><img src="./public/getonplay.png" alt="get it on google play" /></a>
