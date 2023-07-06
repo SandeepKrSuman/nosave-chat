@@ -4,18 +4,19 @@ import "./ChatBox.css";
 import QrCode from "../QrCode/QrCode";
 
 const ChatBox = () => {
-  const [ccode, setCcode] = useState(91);
+  const [ccode, setCcode] = useState("+91");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("Hello 👋");
   const [qrUrl, setQrUrl] = useState("");
 
   const handleCcodeChange = (e) => {
-    const inputCcode = e.target.value.replace(/[^0-9]/g, "");
+    const inputCcode = e.target.value;
     setCcode(inputCcode);
 
-    const qurl = `https://wa.me/${inputCcode}${phoneNumber}?text=${encodeURIComponent(
-      msg
-    )}`;
+    const qurl = `https://wa.me/${inputCcode.replace(
+      /[^0-9]/g,
+      ""
+    )}${phoneNumber}?text=${encodeURIComponent(message)}`;
     setQrUrl(qurl);
   };
 
@@ -23,9 +24,10 @@ const ChatBox = () => {
     const inputPhoneNumber = e.target.value.replace(/[^0-9]/g, "");
     setPhoneNumber(inputPhoneNumber);
 
-    const qurl = `https://wa.me/${ccode}${inputPhoneNumber}?text=${encodeURIComponent(
-      message
-    )}`;
+    const qurl = `https://wa.me/${ccode.replace(
+      /[^0-9]/g,
+      ""
+    )}${inputPhoneNumber}?text=${encodeURIComponent(message)}`;
     setQrUrl(qurl);
   };
 
@@ -33,9 +35,10 @@ const ChatBox = () => {
     const msg = e.target.value;
     setMessage(msg);
 
-    const qurl = `https://wa.me/${ccode}${phoneNumber}?text=${encodeURIComponent(
-      msg
-    )}`;
+    const qurl = `https://wa.me/${ccode.replace(
+      /[^0-9]/g,
+      ""
+    )}${phoneNumber}?text=${encodeURIComponent(msg)}`;
     setQrUrl(qurl);
   };
 
@@ -43,7 +46,10 @@ const ChatBox = () => {
     if (phoneNumber.length === 0) return;
 
     const encodedMessageText = encodeURIComponent(message);
-    const chatLink = `https://wa.me/${ccode}${phoneNumber}?text=${encodedMessageText}`;
+    const chatLink = `https://wa.me/${ccode.replace(
+      /[^0-9]/g,
+      ""
+    )}${phoneNumber}?text=${encodedMessageText}`;
 
     setPhoneNumber("");
     setMessage("Hello 👋");
