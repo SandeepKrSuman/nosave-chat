@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-.instructions-container {
+.container {
   display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,18 +11,18 @@
     text-align: left;
   }
   
-  .instructions-container h3 {
+  .container h3 {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 15px;
   }
   
-  .instructions-container ol {
+  .container ol {
     margin-left: 20px;
     font-size: 1rem;
   }
   
-  .instructions-container li {
+  .container li {
     margin-bottom: 10px;
   }
   

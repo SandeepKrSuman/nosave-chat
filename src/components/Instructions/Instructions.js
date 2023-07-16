@@ -1,10 +1,9 @@
 import React from "react";
-
-import "./Instructions.css";
+import styles from "./Instructions.module.css";
 
 const Instructions = () => {
   return (
-    <div className="instructions-container">
+    <div className={styles.container}>
       <h3>How to Use?</h3>
       <ol>
         <li>Enter the phone number you want to chat with.</li>

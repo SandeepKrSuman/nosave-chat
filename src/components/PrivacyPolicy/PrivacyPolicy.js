@@ -1,10 +1,10 @@
 import React from "react";
-import "./PrivacyPolicy.css";
+import styles from "./PrivacyPolicy.module.css";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="pwrapper">
-      <div className="pcontainer">
+    <div className={styles.pwrapper}>
+      <div className={styles.pcontainer}>
         <h2>Privacy Policy</h2>
         <h1>NoSave Chat</h1>
         <br />
@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
           to the terms outlined in this policy.
         </p>
 
-        <div className="psection-title">1. Information Collection and Use</div>
+        <div className={styles.title}>1. Information Collection and Use</div>
         <p>
           NoSave Chat is a simple app that allows users to initiate WhatsApp
           chats without saving the contact number. To use the app, you provide a
@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
           the pre-filled message and the specified phone number.
         </p>
 
-        <div className="psection-title">2. Data Transmission</div>
+        <div className={styles.title}>2. Data Transmission</div>
         <p>
           When you initiate a chat using NoSave Chat, your message and the phone
           number you entered are transmitted to WhatsApp. For this purpose we
@@ -42,7 +42,7 @@ const PrivacyPolicy = () => {
           information once it is redirected to WhatsApp.
         </p>
 
-        <div className="psection-title">3. Third-Party Integration</div>
+        <div className={styles.title}>3. Third-Party Integration</div>
         <p>
           NoSave Chat integrates with WhatsApp's API or deep linking feature to
           initiate chats. We do not control the data handling practices of
@@ -50,7 +50,7 @@ const PrivacyPolicy = () => {
           understand how they handle your information.
         </p>
 
-        <div className="psection-title">4. Data Security</div>
+        <div className={styles.title}>4. Data Security</div>
         <p>
           We take reasonable precautions to ensure the security of your
           information. However, please be aware that no method of transmission
@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
           absolute security.
         </p>
 
-        <div className="psection-title">5. Children's Privacy</div>
+        <div className={styles.title}>5. Children's Privacy</div>
         <p>
           To use NoSave Chat one should already be using WhatsApp. Our app
           relies on WhatsApp for functionality, and any information provided or
@@ -78,7 +78,7 @@ const PrivacyPolicy = () => {
           appropriate boundaries and guidelines for app usage.
         </p>
 
-        <div className="psection-title">6. Changes to this Policy</div>
+        <div className={styles.title}>6. Changes to this Policy</div>
         <p>
           We may update this Privacy Policy from time to time. Any changes will
           be effective immediately upon posting the revised policy on this page.
@@ -86,7 +86,7 @@ const PrivacyPolicy = () => {
           informed about how we are protecting your information.
         </p>
 
-        <div className="psection-title">7. Contact Us</div>
+        <div className={styles.title}>7. Contact Us</div>
         <p>
           If you have any questions or concerns about this Cookie Policy &
           Privacy Statement, please raise an issue{" "}

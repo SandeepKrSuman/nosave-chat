@@ -1,15 +1,15 @@
 import React from "react";
-import "./Brand.css";
+import styles from "./Brand.module.css";
 
 export default function Brand() {
   return (
-    <div className="navbrand">
+    <div className={styles.navbrand}>
       <img
         src={require("../../../public/logo.png")}
         alt="Logo"
-        className="logo"
+        className={styles.logo}
       />
-      <span className="text">NoSave Chat</span>
+      <span className={styles.text}>NoSave Chat</span>
     </div>
   );
 }

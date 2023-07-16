@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Faq.css";
+import styles from "./Faq.module.css";
 
 const Faq = () => {
   const faqData = [
@@ -38,13 +38,13 @@ const Faq = () => {
   ];
 
   return (
-    <div className="faq-section">
+    <div className={styles.section}>
       <h3>FAQs</h3>
-      <div className="faqs-container">
+      <div className={styles.container}>
         {faqData.map((faq, index) => (
-          <div className="faq-item" key={index}>
-            <h5 className="faq-question">{faq.question}</h5>
-            <p className="faq-answer">{faq.answer}</p>
+          <div className={styles.item} key={index}>
+            <h5 className={styles.question}>{faq.question}</h5>
+            <p className={styles.answer}>{faq.answer}</p>
           </div>
         ))}
       </div>

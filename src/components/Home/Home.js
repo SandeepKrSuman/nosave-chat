@@ -5,14 +5,14 @@ import Instructions from "../Instructions/Instructions";
 import CallToAction from "../CallToAction/CallToAction";
 import Faq from "../Faq/Faq";
 
-import "./Home.css";
+import styles from "./Home.module.css";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <Brand />
-      <div className="main">
-        <div className="fluid">
+      <div className={styles.main}>
+        <div className={styles.fluid}>
           <ChatBox />
           <CallToAction />
           <Instructions />

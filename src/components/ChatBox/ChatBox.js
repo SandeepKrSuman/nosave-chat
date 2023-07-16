@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-
-import "./ChatBox.css";
 import QrCode from "../QrCode/QrCode";
 
-const ChatBox = () => {
+import styles from "./ChatBox.module.css";
+
+export default function ChatBox() {
   const [ccode, setCcode] = useState("+91");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("Hello 👋");
@@ -60,15 +60,15 @@ const ChatBox = () => {
   };
 
   return (
-    <div className="chatbox-container">
+    <div className={styles.container}>
       {phoneNumber.length > 0 && <QrCode qrurl={qrUrl} />}
       <form>
-        <div className="input-container phonewithcode">
+        <div className={`${styles.inputContainer} ${styles.phonewithcode}`}>
           <input
             type="tel"
             placeholder="code"
             title="country code"
-            className="ccode"
+            className={styles.ccode}
             value={ccode}
             onChange={handleCcodeChange}
             required
@@ -76,7 +76,7 @@ const ChatBox = () => {
           <input
             type="tel"
             placeholder="Phone Number"
-            className="pphone"
+            className={styles.pphone}
             value={phoneNumber}
             onChange={handlePhoneNumberChange}
             pattern="\d{10}"
@@ -84,7 +84,7 @@ const ChatBox = () => {
             required
           />
         </div>
-        <div className="input-container">
+        <div className={styles.inputContainer}>
           <textarea
             placeholder="Message"
             value={message}
@@ -92,12 +92,10 @@ const ChatBox = () => {
             required
           />
         </div>
-        <button className="send-button" onClick={handleSendMessage}>
+        <button className={styles.sendButton} onClick={handleSendMessage}>
           Chat on WhatsApp
         </button>
       </form>
     </div>
   );
-};
-
-export default ChatBox;
+}

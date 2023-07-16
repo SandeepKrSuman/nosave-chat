@@ -1,4 +1,4 @@
-.chatbox-container {
+.container {
     width: 55%;
     margin: 0 auto;
   }
@@ -8,7 +8,7 @@
     flex-direction: column;
   }
   
-  .input-container {
+  .inputContainer {
     margin-bottom: 20px;
   }
   
@@ -26,7 +26,7 @@
     resize: none;
   }
   
-  .send-button {
+  .sendButton {
     background-color: #4caf50;
     color: white;
     border: none;
@@ -38,7 +38,7 @@
     align-self: flex-end;
   }
   
-  .send-button:hover {
+  .sendButton:hover {
     background-color: #45a049;
   }
 
@@ -74,11 +74,11 @@
   }
   
   @media only screen and (max-width: 767px) {
-    .chatbox-container {
+    .Container {
       width: 90%;
     }
 
-    .send-button {
+    .sendButton {
       width: 100%;
     }
   }
